@@ -1,0 +1,46 @@
+<meta charset="UTF-8">
+
+<h1>Advinhe o número!<br></h1>
+
+<script>
+
+	function pulaLinha() {
+
+		document.write("<br>");
+		document.write("<br>");
+
+	}
+
+	function mostra(frase) {
+
+		document.write(frase);
+		pulaLinha();
+	}
+
+	var numeroPensado = Math.round(Math.random() * 10);
+	console.log (numeroPensado);
+
+	var tentativa = parseInt(prompt("Digite um número de 0 a 10:"))
+
+	if (tentativa == numeroPensado) {
+
+		mostra("Você acertou, você é bom demais!");
+	}else {
+		mostra("vocé errou! O número que pensei é " + numeroPensado)
+	}
+
+	if (tentativa == numeroPensado) {
+
+		mostra("Parabêns, você acertou a porra do número!")
+	}
+
+	else if (tentativa > numeroPensado) {
+
+		mostra("O número que você tentou é maior do que o número que pensei!");
+
+	}else{
+
+		mostra("O número que você tentou é menor do que o número que pensei!");
+	}
+
+</script>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+function pulaLinha() {
+    document.write("<br>");
+    document.write("<br>");
+}
+
+function mostra(frase) {
+    document.write(frase);
+    pulaLinha();
+}
+
+var numeroEventos = parseInt(prompt("Informe a quantidade de eventos:"));
+
+var contador = 1;
+
+var totalGasto = 0;
+
+while(contador <= numeroEventos) {
+
+    var gasto = parseInt(prompt("informe quanto foi gasto nesse evento:"));
+    totalGasto = totalGasto + gasto;
+    contador++
+}
+var mediaGasto = totalGasto/numeroEventos;
+mostra("A média dos gastos é de R$: " + mediaGasto);
+</script>
