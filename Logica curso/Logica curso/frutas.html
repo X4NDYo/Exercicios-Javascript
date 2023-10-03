@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+</html>
+
+<script>
+
+    function pulaLinha() {
+        document.write("<br>");
+    }
+
+    function mostra(frase){
+        document.write(frase);
+        pulaLinha();
+    }
+
+    var numeroFrutas = parseInt(prompt("De quantas frutas você gosta?"));
+    var fruta = 1;
+    var totalFruta1 = 0;
+    var totalFruta2 = 0;
+    var totalFruta3 = 0;
+
+    while(fruta <= numeroFrutas) {
+        var frutas = prompt("Informe de quais frutas você gosta:");
+        totalFruta1 = totalFruta1 + frutas;
+        totalFruta2 = totalFruta2 + frutas;
+        totalFruta3 = totalFruta3 + frutas;
+
+        fruta++;
+    }
+
+    mostra("você gostas das seguintes frutas: " + totalFruta1 + " , " + totalFruta2 + " e " + totalFruta3);
+</script>
+ERRADOOOOO
